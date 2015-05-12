@@ -1,0 +1,12 @@
+
+<div class="container">
+    <h1><strong>Welcome to Chuck Notice.</strong></h1>
+  <h4><q>We are changing the world, one roundhouse kick at a time.</q></h4>
+    <%= form_tag("/notice", method: "post") do %>
+      <p>Please enter a US phone number:</p>
+      <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+      <%= text_field_tag(:p_number) %>
+      <%= submit_tag("Submit")%>
+      <p><small>Area code followed by numer, no #1 and no spaces please.</small>  </p>
+    <% end %>
+</div>
