@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: chuck_notice_production
-  username: shoopdawhoop
+  username: ENV['db_id']
   password: <%= ENV['CHUCK_NOTICE_DATABASE_PASSWORD'] %>
